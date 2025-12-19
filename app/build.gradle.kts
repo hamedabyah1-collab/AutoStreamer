@@ -1,10 +1,7 @@
 plugins {
-    id("com.android.application") version "8.3.0" apply false
-    id("org.jetbrains.kotlin.android") version "1.9.0" apply false
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
 }
-
-apply(plugin = "com.android.application")
-apply(plugin = "org.jetbrains.kotlin.android")
 
 android {
     namespace = "com.aidetector.app"
@@ -38,14 +35,9 @@ android {
     }
 }
 
-repositories {
-    google()
-    mavenCentral()
-}
-
 dependencies {
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.google.android.material:material:1.11.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.3.1")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 }
