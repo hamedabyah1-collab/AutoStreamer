@@ -37,18 +37,18 @@ android {
 
 dependencies {
     // Core Android
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
+    implementation "androidx.appcompat:appcompat:1.7.0"
+    implementation "com.google.android.material:material:1.11.0"
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
 
-    // Android Auto Car App Library - Essential for car screen
-    implementation("androidx.car.app:app:1.4.0")
+    // Android Auto Car App Library
+    implementation "androidx.car.app:app:1.4.0"
 
-    // WebView - To display web content
-    implementation("androidx.webkit:webkit:1.9.0")
+    // WebView
+    implementation "androidx.webkit:webkit:1.9.0"
 
-    // Testing
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+    // Testing (اختياري)
+    testImplementation "junit:junit:4.13.2"
+    androidTestImplementation "androidx.test.ext:junit:1.1.5"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
 }
