@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<host-list>
+    <!-- Allow all hosts for sideloading purposes -->
+    <host android:name="com.google.android.projection.gearhead" />
+    <host android:name="com.google.android.apps.auto" />
+</host-list>
