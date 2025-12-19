@@ -1,7 +1,10 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    id("com.android.application") version "8.3.0" apply false
+    id("org.jetbrains.kotlin.android") version "1.9.0" apply false
 }
+
+apply(plugin = "com.android.application")
+apply(plugin = "org.jetbrains.kotlin.android")
 
 android {
     namespace = "com.aidetector.app"
@@ -33,6 +36,11 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+}
+
+repositories {
+    google()
+    mavenCentral()
 }
 
 dependencies {
